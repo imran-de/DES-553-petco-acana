@@ -630,8 +630,7 @@ ul.splide__pagination {
   column-gap: 10px;
   position: absolute;
   bottom: -10px;
-  width: 100vw;
-  justify-content: center;
+  width: 100%;
 }
 ul.splide__pagination button {
   width: 19px;
