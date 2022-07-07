@@ -623,6 +623,9 @@ a {
   height: 400px;
   position: relative;
 }
+#image-carousel .splide__arrows {
+  display: none;
+}
 ul.splide__pagination {
   list-style: none;
   display: flex;
@@ -631,12 +634,32 @@ ul.splide__pagination {
   position: absolute;
   bottom: -10px;
   width: 100%;
+  padding-left: 0;
 }
 ul.splide__pagination button {
   width: 19px;
   height: 19px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0);
+}
+
+@media all and (min-width: 992px) and (max-width: 1300px) {
+  .citrusAcana__SliderContainer {
+    height: 300px;
+    overflow: hidden;
+  }
+  #image-carousel,
+  .citrusAcana__thirdSlide_Row,
+  .citrusAcana__firstSlide_Row,
+  .citrusAcana__secondSlide_Row {
+    height: 310px;
+  }
+  #image-carousel .splide__track {
+    height: 100%;
+  }
+  .citrusAcana__imgContainer .citrusAcana__mobile_hide img {
+    height: 100vh;
+  }
 }
 @media all and (max-width: 768px) {
   .citrusAcana__sliderBox {

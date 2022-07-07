@@ -328,6 +328,9 @@ button {
   .citrusPetIQ__shopProduct__col {
     max-width: 210px;
   }
+  .citrus_meet_tab_item {
+    font-size: 12px;
+  }
 }
 
 @media all and (max-width: 1280px) {

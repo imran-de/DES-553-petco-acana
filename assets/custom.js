@@ -99,35 +99,9 @@ for (var i = 0; i < dogBestbtns.length; i++) {
 //for Dog best seller tab switcher
 
 //slider script
-document.addEventListener("DOMContentLoaded", function () {
-  new Splide("#image-carousel").mount();
-});
-let counter = 1;
-setInterval(function () {
-  // document.getElementById("image-carousel" + counter).checked = true;
-  // counter++;
-  // if (counter > 3) {
-  //   counter = 1;
-  // }
-  new Splide(".splide").mount().play();
-}, 50000000000000000);
-splide.on("pagination:mounted", function (data) {
-  // You can add your class to the UL element
-  data.list.classList.add("splide__pagination--custom");
 
-  // `items` contains all dot items
-  data.items.forEach(function (item) {
-    item.button.textContent = String(item.page + 1);
-  });
-});
-
-splide.mount();
-// //slider script
-// let counter = 1;
-// setInterval(function () {
-//   counter++;
-//   document.getElementById("radio" + counter).checked = true;
-//   if (counter == 3) {
-//     counter = 0;
-//   }
-// }, 5000);
+new Splide(".splide", {
+  type: "loop",
+  interval: 5000,
+  autoplay: true,
+}).mount();
