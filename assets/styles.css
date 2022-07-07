@@ -51,10 +51,10 @@ a {
 }
 .citrusAcana__firstSlideContainer,
 .citrusAcana__thirdSlide_Row {
-  width: 1440px;
+  width: 100%;
   max-width: 100%;
   height: 400px;
-  overflow: hidden;
+  overflow: hidden !important;
   margin: auto;
 }
 .citrusAcana__firstSlide_Row {
@@ -131,6 +131,7 @@ a {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 15px;
   text-align: center;
+  height: 100%;
 }
 .citrusAcana__secondSlide__Col,
 .citrusAcana__thirdSlide__col {
@@ -338,6 +339,7 @@ a {
   font-family: "PetcoCircularTT-Regular", arial !important;
   font-weight: bold;
   text-decoration: underline;
+  color: #001952;
 }
 .citrusAcana__disclaimer {
   font-family: "PetcoCircularTT-Regular", arial !important;
@@ -379,17 +381,204 @@ a {
   margin: 0 14%;
   text-align: center;
 }
-
-/* external css no need to stay here this style test purpose only */
-/* .citrusAcana__firstSlideContainer,
-.citrusAcana__secondSlideContainer,
-.citrusAcana__thirdSlideContainer,
-.citrus-meet-orijen-tab-area,
-.citrusAcana__goBeyondContainer,
-.citrusAcana__premiumContainer-fluid,
-.citrusAcana__newPremium__container {
+/*  slider custom styling */
+.citrusAcana__sliderBox {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+#image-carousel .splide__arrows {
   display: none;
-} */
+}
+ul.splide__pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  position: absolute;
+  bottom: -20px;
+  left: calc(100% / 2 - 40px);
+  text-align: center;
+  background: rgb(189 189 189 / 80%);
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 5px;
+  width: 100px;
+}
+ul.splide__pagination button {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  border: 2px solid #09205c;
+  cursor: pointer;
+}
+
+ul.splide__pagination button.is-active {
+  background-color: #09205c;
+}
+/* -------------------------------------------------------
+ product tab styling
+----------------------------------------------------------
+*/
+.citrus-meet-orijen-tab-area {
+  overflow: hidden;
+  padding-top: 35px;
+  padding-bottom: 26px;
+}
+
+.citrus-meet-orijen-tab-container {
+  max-width: 1273px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/***** best seller section ****/
+.citrusfilterMeetDiv.citrusTabshow {
+  display: block;
+}
+
+.citrusfilterMeetDiv {
+  float: left;
+  display: none;
+}
+
+.citrus_meet_tab_item span {
+  display: block;
+}
+
+.citrus_meet_tab_item {
+  text-transform: uppercase;
+  padding: 12px 20px;
+  margin: 0px 10px;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  color: #6e6b6b;
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+}
+
+button {
+  font-family: "PetcoCircularTT-Regular", arial !important;
+}
+
+.citrus_meet_tab_item.citrus_meet_tab_item_active {
+  color: #001952;
+  border-bottom: 8px solid #001952;
+  margin-top: 12px;
+}
+
+.citrus-meet-orijen-main21 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 21px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #021b4e;
+}
+
+.cirtus_meet_tabs_22 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.citrus_item_section__tab_content_item {
+  max-width: 195px;
+  width: 100% !important;
+  margin: 0px 9px;
+}
+
+.citrus-inner-img22 {
+  padding: 0 15px;
+}
+
+.citrus-inner-img22 > a img {
+  width: 100%;
+  height: auto;
+}
+
+.citrus_item_section__tab_content_item.citrus_row_opacity_0 {
+  opacity: 0;
+}
+
+.cirtus_meet_tabs_main_22 .splide__pagination {
+  display: none;
+}
+
+.citrus_product_info22 > p {
+  font-size: 13px;
+  color: #333333;
+  min-height: 82px;
+  display: block;
+  margin-top: 18px;
+}
+
+.citrus-meet-tab-product > a {
+  color: #001952;
+  font-size: 13px;
+  display: block;
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.cirtus_meet_tabs_22 .splide__arrow--next {
+  right: 0px;
+}
+
+.cirtus_meet_tabs_22 .splide__arrow--prev {
+  left: 2px;
+}
+
+.cirtus_meet_tabs_22 .splide__arrow svg {
+  fill: #122359;
+}
+
+.cirtus_meet_tabs_22 .splide__arrow {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background: transparent;
+  border: 1px solid #122359;
+  border-radius: 50%;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  height: 3.2em;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  opacity: 1;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 3.2em;
+  z-index: 1;
+}
+
 /* some common style */
 .citrusAcana__desktop_hide {
   display: none;
@@ -398,6 +587,13 @@ a {
   display: block;
 }
 /* responsive styling start for small devices */
+
+@media all and (max-width: 1440px) {
+  .citrusAcana__firstSlide__middleContainer {
+    height: 380px;
+  }
+}
+
 @media all and (min-width: 992px) and (max-width: 1301px) {
   .citrusAcana__firstSlideTitle,
   .citrusAcana__secondSlide__title,
@@ -406,11 +602,16 @@ a {
     font-size: 26px;
     font-weight: bold;
     color: #001952;
-    text-align: center;
+    text-align: left;
   }
   .citrusAcana__logo {
     width: 170px;
     max-width: 100%;
+  }
+  .citrusAcana__secondSlide__textContainer,
+  .citrusAcana__thirdSlide__textContainer {
+    row-gap: 10px;
+    margin-top: -30px;
   }
   .citrusAcana__shopCTALarge {
     background: #001952;
@@ -424,12 +625,57 @@ a {
   }
   .citrusAcana__firstSlide__middleContainer {
     margin-top: 10px;
-    row-gap: 30px;
+    row-gap: 20px;
     height: auto;
   }
+  /* slider custom styling */
+  .citrusAcana__SliderContainer {
+    height: 300px;
+    overflow: hidden;
+  }
+  #image-carousel,
+  .citrusAcana__thirdSlide_Row,
+  .citrusAcana__firstSlide_Row,
+  .citrusAcana__secondSlide_Row {
+    height: 310px;
+  }
+  #image-carousel .splide__track {
+    height: 100%;
+  }
+  .citrusAcana__imgContainer .citrusAcana__mobile_hide img {
+    height: 100vh;
+  }
+  ul.splide__pagination {
+    bottom: -7px;
+  }
+
+  .citrus_meet_tab_item {
+    font-size: 12px;
+  }
 }
-@media all and (min-width: 768px) and (max-width: 991px) {
+@media all and (min-width: 769px) and (max-width: 991px) {
   /* ---------------------- */
+
+  /* slider custom styling */
+  .citrusAcana__SliderContainer #image-carousel {
+    height: 280px;
+  }
+  .citrusAcana__firstSlideContainer,
+  .citrusAcana__thirdSlide_Row {
+    height: auto;
+  }
+  .citrusAcana__secondSlide_Row {
+    height: 280px;
+    background-position: top;
+  }
+  .citrusAcana__secondSlide__textContainer,
+  .citrusAcana__thirdSlide__textContainer {
+    row-gap: 10px;
+  }
+  .citrusAcana__firstSlide__middleContainer {
+    height: 260px;
+    padding: 0 10px;
+  }
 
   .citrusAcana__goBeyond__Card--body {
     padding: 40px;
@@ -444,11 +690,26 @@ a {
     width: 170px;
     max-width: 100%;
   }
-
+  .citrus-meet-orijen-tab-container {
+    padding: 0 20px;
+  }
+  .citrusAcana__newPremium__container {
+    padding: 0 20px;
+  }
+  .citrusAcana__newPremium__productShot--card__img {
+    height: 120px;
+  }
+  .citrusAcana__newPremium__productShot--card__body p {
+    font-size: 12px;
+  }
   .citrusAcana__shopCTALarge {
     width: 140px;
     height: 36px;
+    font-size: 14px;
     line-height: 36px;
+  }
+  .citrus_meet_tab_item {
+    font-size: 10px;
   }
 }
 @media all and (max-width: 768px) {
@@ -537,7 +798,9 @@ a {
   .citrus-meet-orijen-main21 {
     width: 350%;
   }
-
+  .citrus_meet_tab_item {
+    font-size: 12px;
+  }
   /* -------------------------- */
   .citrusAcana__sectionTitle h2 {
     font-size: 20px;
@@ -614,55 +877,27 @@ a {
     width: 100%;
     height: auto;
   }
-}
-/*  slider custom styling */
-.citrusAcana__sliderBox {
-  width: 1440px;
-  max-width: 100%;
-  margin: auto;
-  height: 400px;
-  position: relative;
-}
-#image-carousel .splide__arrows {
-  display: none;
-}
-ul.splide__pagination {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  column-gap: 10px;
-  position: absolute;
-  bottom: -10px;
-  width: 100%;
-  padding-left: 0;
-}
-ul.splide__pagination button {
-  width: 19px;
-  height: 19px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0);
-}
-
-@media all and (min-width: 992px) and (max-width: 1300px) {
-  .citrusAcana__SliderContainer {
-    height: 300px;
-    overflow: hidden;
-  }
-  #image-carousel,
-  .citrusAcana__thirdSlide_Row,
-  .citrusAcana__firstSlide_Row,
-  .citrusAcana__secondSlide_Row {
-    height: 310px;
-  }
-  #image-carousel .splide__track {
-    height: 100%;
-  }
-  .citrusAcana__imgContainer .citrusAcana__mobile_hide img {
-    height: 100vh;
-  }
-}
-@media all and (max-width: 768px) {
+  /* slider custom styling */
   .citrusAcana__sliderBox {
     height: auto;
+  }
+}
+
+@media all and (max-width: 420px) {
+  .citrusAcana__firstSlideTitle,
+  .citrusAcana__secondSlide__title,
+  .citrusAcana__thirdSlide__title {
+    font-size: 25px;
+  }
+  .citrusAcana__Middle_textContainer p,
+  .citrusAcana__secondSlide__textContainer p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .citrusAcana__thirdSlide__textContainer {
+    width: 100%;
+  }
+  .citrusAcana__thirdSlide__textContainer .citrusAcana__sliderText {
+    width: 90%;
   }
 }
