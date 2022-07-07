@@ -131,7 +131,7 @@ a {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 15px;
   text-align: center;
-  height: 100%;
+  height: 400px;
 }
 .citrusAcana__secondSlide__Col,
 .citrusAcana__thirdSlide__col {
@@ -336,7 +336,7 @@ a {
   font-size: 13px;
 }
 .citrusAcana__newPremium__productShot--card__body a {
-  font-family: "PetcoCircularTT-Regular", arial !important;
+  font-family: "PetcoCircularTT-Bold", arial !important;
   font-weight: bold;
   text-decoration: underline;
   color: #001952;
@@ -536,7 +536,7 @@ button {
   color: #001952;
   font-size: 13px;
   display: block;
-  font-family: "PetcoCircularTT-Regular", arial !important;
+  font-family: "PetcoCircularTT-Bold", arial !important;
   text-decoration: underline;
   font-weight: bold;
 }
