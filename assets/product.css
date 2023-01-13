@@ -103,25 +103,24 @@ body {
   -ms-flex-align: center;
   -webkit-box-align: center;
   align-items: center;
-  background: #ccc;
-  border: 0;
+  background: #ffffff;
+  border: 1px solid #122359;
   border-radius: 50%;
   cursor: pointer;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
-  height: 2em;
+  height: 2.2em;
   -ms-flex-pack: center;
   -webkit-box-pack: center;
   justify-content: center;
-  opacity: 0.7;
+  opacity: 1;
   padding: 0;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: 2em;
+  width: 2.2em;
   z-index: 1;
 }
 
@@ -287,14 +286,14 @@ button {
   -ms-flex-align: center;
   -webkit-box-align: center;
   align-items: center;
-  background: transparent;
+  background: #ffffff;
   border: 1px solid #122359;
   border-radius: 50%;
   cursor: pointer;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
-  height: 3.2em;
+  height: 2.2em;
   -ms-flex-pack: center;
   -webkit-box-pack: center;
   justify-content: center;
@@ -303,9 +302,8 @@ button {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: 3.2em;
+  width: 2.2em;
   z-index: 1;
 }
 
@@ -384,4 +382,10 @@ button {
 }
 
 @media all and (max-width: 374px) {
+}
+
+/* for hiding arrow set opacity 0 */
+.cirtus_meet_tabs_22 .splide__arrow:disabled,
+.citrus-meet-section__tab-content .splide__arrow:disabled {
+  opacity: 0;
 }

@@ -7,14 +7,15 @@ if (splides.length) {
     var splideElement = splides[i];
     var splideDefaultOptions = {
       rewind: true,
+      arrows: true,
       type: "slide",
+      focus: "left",
       autoplay: false,
       rewindSpeed: 500,
       speed: 500,
       pauseOnHover: true,
       perPage: 6,
       perMove: 2,
-      width: "100%",
       breakpoints: {
         375: {
           perPage: 1,
@@ -32,7 +33,7 @@ if (splides.length) {
           perPage: 4,
         },
         1200: {
-          perPage: 5,
+          perPage: 6,
         },
         1440: {
           perPage: 6,
@@ -100,7 +101,52 @@ for (var i = 0; i < dogBestbtns.length; i++) {
   });
 }
 //for Dog best seller tab switcher
+// --------------------for hiding arrow-------------------------
+/* for hiding arrow set opacity 0 in style sheet
+.cirtus_meet_tabs_22 .splide__arrow:disabled,
+.citrus-meet-section__tab-content .splide__arrow:disabled {
+  opacity: 0;
+}
+*/
+arrowHide("splide01");
+arrowHide("splide02");
+arrowHide("splide04");
+arrowHide("splide06");
+arrowHide("splide07");
+function arrowHide(id) {
+  var splide = new Splide("#" + id, {
+    focus: "right",
+  });
+  splide.on("visible", function (slide) {
+    //hides right arrow if last slide visible
+    if (
+      slide.index === splide.length - 1 &&
+      splide.Components &&
+      splide.Components.Arrows &&
+      splide.Components.Arrows.arrows &&
+      splide.Components.Arrows.arrows.next
+    ) {
+      if (!splide.Components.Arrows.arrows.next.disabled) {
+        splide.Components.Arrows.arrows.next.disabled = true;
+      }
+    }
+    //hides left arrow if first slide visible
+    if (
+      slide.index === 0 &&
+      splide.Components &&
+      splide.Components.Arrows &&
+      splide.Components.Arrows.arrows &&
+      splide.Components.Arrows.arrows.prev
+    ) {
+      if (!splide.Components.Arrows.arrows.prev.disabled) {
+        splide.Components.Arrows.arrows.prev.disabled = true;
+      }
+    }
+  });
 
+  splide.mount();
+}
+// -------------------------------------------
 //slider script
 
 new Splide(".splide", {

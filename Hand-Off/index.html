@@ -2,13 +2,6 @@
 <!-- product styles -->
 <style>
     /*Default css*/
-    body {
-        margin: 0;
-        padding: 0;
-        font-size: 18px;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-    }
 
     * {
         -webkit-box-sizing: border-box;
@@ -106,25 +99,24 @@
         -ms-flex-align: center;
         -webkit-box-align: center;
         align-items: center;
-        background: #ccc;
-        border: 0;
+        background: #ffffff;
+        border: 1px solid #122359;
         border-radius: 50%;
         cursor: pointer;
         display: -ms-flexbox;
         display: -webkit-box;
         display: flex;
-        height: 2em;
+        height: 2.2em;
         -ms-flex-pack: center;
         -webkit-box-pack: center;
         justify-content: center;
-        opacity: 0.7;
+        opacity: 1;
         padding: 0;
         position: absolute;
         top: 50%;
         -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
         transform: translateY(-50%);
-        width: 2em;
+        width: 2.2em;
         z-index: 1;
     }
 
@@ -209,7 +201,6 @@
         color: #001952;
         border-bottom: 8px solid #001952;
         margin-top: 12px;
-        border-radius: 0;
     }
 
     .citrus-meet-orijen-main21 {
@@ -291,14 +282,14 @@
         -ms-flex-align: center;
         -webkit-box-align: center;
         align-items: center;
-        background: transparent;
+        background: #ffffff;
         border: 1px solid #122359;
         border-radius: 50%;
         cursor: pointer;
         display: -ms-flexbox;
         display: -webkit-box;
         display: flex;
-        height: 3.2em;
+        height: 2.2em;
         -ms-flex-pack: center;
         -webkit-box-pack: center;
         justify-content: center;
@@ -307,9 +298,8 @@
         position: absolute;
         top: 50%;
         -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
         transform: translateY(-50%);
-        width: 3.2em;
+        width: 2.2em;
         z-index: 1;
     }
 
@@ -385,6 +375,12 @@
     @media all and (max-width: 413px) {}
 
     @media all and (max-width: 374px) {}
+
+    /* for hiding arrow set opacity 0 */
+    .cirtus_meet_tabs_22 .splide__arrow:disabled,
+    .citrus-meet-section__tab-content .splide__arrow:disabled {
+        opacity: 0;
+    }
 </style>
 <!-- custom styles-->
 <style>
@@ -644,7 +640,6 @@
         font-family: "PetcoCircularTT-Regular", arial !important;
         font-size: 16px;
         margin-top: 10px;
-        color: #000;
     }
 
     /* Premium meals for a better future start */
@@ -738,8 +733,6 @@
 
     .citrusAcana__newPremium__col {
         position: relative;
-        width: 100%;
-        overflow: hidden;
     }
 
     .citrusAcana__newPremium__col img {
@@ -853,17 +846,13 @@
         justify-content: center;
         column-gap: 10px;
         position: absolute;
-        bottom: 0px;
+        bottom: -17px;
         left: calc(100% / 2 - 50px);
         text-align: center;
         background: rgb(189 189 189 / 80%);
         border-radius: 5px 5px 0 0;
         padding: 10px 10px 5px;
         width: 100px;
-    }
-
-    #image-carousel ul.splide__pagination>li {
-        list-style: none !important;
     }
 
     ul.splide__pagination button {
@@ -985,11 +974,21 @@
     }
 
     .citrus_product_info22>p {
-        font-size: 13px;
+        font-family: "PetcoCircularTT-Regular", arial !important;
         color: #333333;
-        min-height: 82px;
-        display: block;
-        margin-top: 18px;
+        font-size: 13px;
+        text-align: left;
+        padding: 20px 0 20px;
+        margin-top: 20px;
+        text-decoration: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        max-height: 4em;
+        margin-bottom: 24px;
     }
 
     .citrus-meet-tab-product>a {
@@ -1017,14 +1016,14 @@
         -ms-flex-align: center;
         -webkit-box-align: center;
         align-items: center;
-        background: transparent;
+        background: #ffffff;
         border: 1px solid #122359;
         border-radius: 50%;
         cursor: pointer;
         display: -ms-flexbox;
         display: -webkit-box;
         display: flex;
-        height: 3.2em;
+        height: 2.2em;
         -ms-flex-pack: center;
         -webkit-box-pack: center;
         justify-content: center;
@@ -1033,9 +1032,8 @@
         position: absolute;
         top: 50%;
         -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
         transform: translateY(-50%);
-        width: 3.2em;
+        width: 2.2em;
         z-index: 1;
     }
 
@@ -1088,11 +1086,6 @@
             text-align: center;
             line-height: 46px;
             border-radius: 8px;
-        }
-
-        a.citrusAcana__shopCTALarge:hover {
-            color: #fff;
-            text-decoration: none;
         }
 
         .citrusAcana__firstSlide__middleContainer {
@@ -1306,12 +1299,16 @@
             width: 350%;
         }
 
+        .citrus_item_section__tab_content_item {
+            max-width: 225px;
+        }
+
         .citrus_meet_tab_item {
             font-size: 12px;
         }
 
-        .cirtus_meet_tabs_main_22_hide_arrow .splide__arrows {
-            display: block;
+        .cirtus_meet_tabs_main_22 .splide__arrows {
+            display: none;
         }
 
         /* -------------------------- */
@@ -1432,6 +1429,10 @@
         .citrusAcana__thirdSlide__textContainer .citrusAcana__sliderText {
             width: 90%;
         }
+
+        .citrus_item_section__tab_content_item {
+            margin: 0px 10px;
+        }
     }
 </style>
 <main class="citrusAcana__Wrapper">
@@ -1472,11 +1473,11 @@
                                     </div>
                                     <div class="citrusAcana__MiddleCTA-Box">
                                         <a class="citrusAcana__shopCTALarge"
-                                            href="https://www.petco.com/shop/en/petcostore/brand/acana/dog" "/shop/en/petcostore"
+                                            href="https://www.petco.com/shop/en/petcostore/brand/acana/dog"
                                             manual_cm_sp="sponsoredbrandpage:acana:heropov:1:qualitypetnutrition:shopdog"
                                             onclick="clickTrackLink(this);">Shop Dog</a>
                                         <a class="citrusAcana__shopCTALarge"
-                                            href="https://www.petco.com/shop/en/petcostore/brand/acana/cat" "/shop/en/petcostore"
+                                            href="https://www.petco.com/shop/en/petcostore/brand/acana/cat"
                                             manual_cm_sp="sponsoredbrandpage:acana:heropov:1:qualitypetnutrition:shopcat"
                                             onclick="clickTrackLink(this);">Shop Cat</a>
                                     </div>
@@ -1521,7 +1522,7 @@
                                     </p>
                                     <div class="citrusAcana__secondSlideCTA-Box">
                                         <a class="citrusAcana__shopCTALarge"
-                                            href="https://www.petco.com/shop/en/petcostore/brand/acana/cat/cat-food/wet-cat-food" "/shop/en/petcostore"
+                                            href="https://www.petco.com/shop/en/petcostore/brand/acana/cat/cat-food/wet-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:heropov:2:premiumpate:shopnow"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -1545,7 +1546,7 @@
                                     </p>
                                     <div class="citrusAcana__secondSlideCTA-Box">
                                         <a class="citrusAcana__shopCTALarge"
-                                            href="https://www.petco.com/shop/en/petcostore/brand/acana" "/shop/en/petcostore"
+                                            href="https://www.petco.com/shop/en/petcostore/brand/acana"
                                             manual_cm_sp="sponsoredbrandpage:acana:heropov:3:acanascommitment:shopnow"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -1615,7 +1616,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_all_tab_select splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-red-meat-dry-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-red-meat-dry-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:drydogfoodgrains:1:redmeatdrydogfoodwgrain:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab1.1_RedMeatDryDogFoodWGrain.png"
@@ -1625,7 +1626,7 @@
                                             <p>ACANA Wholesome Grains Red Meat & Grains Recipe Dry Dog Food, 22.5
                                                 lbs.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-red-meat-dry-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-red-meat-dry-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:drydogfoodgrains:1:redmeatdrydogfoodwgrain:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -1636,7 +1637,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_all_tab_select splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-poultry-dry-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-poultry-dry-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:drydogfoodgrains:2:poultrydrydogfoodwgrain:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab1.2_PoultryDryDogFoodWGrain.png"
@@ -1646,7 +1647,7 @@
                                             <p>ACANA Wholesome Grains Free-Run Poultry & Grains Recipe Dry Dog Food,
                                                 22.5 lbs.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-poultry-dry-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-poultry-dry-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:orijen:drydogfoodgrains:2:puppylargedogdrywgrain:shopnow"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -1657,7 +1658,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_all_tab_select splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-puppy-recipe-with-real-chicken-eggs-and-turkey-dry-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-puppy-recipe-with-real-chicken-eggs-and-turkey-dry-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:drydogfoodgrains:3:puppydrydogfoodwgrain:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab1.3_PuppyDryDogFoodWGrain.png"
@@ -1668,7 +1669,7 @@
                                                 Turkey Dry Food, 11.5 lbs.
                                             </p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-puppy-recipe-with-real-chicken-eggs-and-turkey-dry-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-puppy-recipe-with-real-chicken-eggs-and-turkey-dry-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:drydogfoodgrains:3:puppydrydogfoodwgrain:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -1679,7 +1680,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_all_tab_select splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-rescue-care-for-adopted-dogs-red-meat-liver-and-whole-oats-recipe-premium-dry-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-rescue-care-for-adopted-dogs-red-meat-liver-and-whole-oats-recipe-premium-dry-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:drydogfoodgrains:4:rscredmeatdrydogfoodwgrain:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab1.4_RSCRedMeatDryDogFoodWGrain.png"
@@ -1690,7 +1691,7 @@
                                                 Recipe Premium Dry Food, 22.5
                                                 lbs.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-rescue-care-for-adopted-dogs-red-meat-liver-and-whole-oats-recipe-premium-dry-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-rescue-care-for-adopted-dogs-red-meat-liver-and-whole-oats-recipe-premium-dry-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:drydogfoodgrains:4:rscredmeatdrydogfoodwgrain:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -1701,7 +1702,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_all_tab_select splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-lamb-and-pumpkin-dry-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-lamb-and-pumpkin-dry-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:drydogfoodgrains:5:lambpumpkindrydogfoodwgrain:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab1.5_LambPumpkinDryDogFoodWGrain.png"
@@ -1711,7 +1712,7 @@
                                             <p>ACANA Wholesome Grains Lamb & Pumpkin Recipe Dry Dog Food, 22.5 lbs.
                                             </p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-lamb-and-pumpkin-dry-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-lamb-and-pumpkin-dry-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:drydogfoodgrains:5:lambpumpkindrydogfoodwgrain:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -1722,7 +1723,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_all_tab_select splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-duck-and-pumpkin-dry-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-duck-and-pumpkin-dry-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:drydogfoodgrains:6:duckpumpkindrydogfoodwgrain:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab1.6_DuckPumpkinDryDogFoodWGrain.png"
@@ -1732,7 +1733,7 @@
                                             <p>ACANA Wholesome Grains Duck & Pumpkin Recipe Dry Dog Food, 22.5 lbs.
                                             </p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-duck-and-pumpkin-dry-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-duck-and-pumpkin-dry-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:drydogfoodgrains:6:duckpumpkindrydogfoodwgrain:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -1743,7 +1744,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_all_tab_select splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-american-waters-dry-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-american-waters-dry-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:drydogfoodgrains:7:seatostreamdrydogfoodwgrain:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab1.7_SeaToStreamDryDogFoodWGrain.png"
@@ -1753,7 +1754,7 @@
                                             <p>ACANA Wholesome Grains Sea To Stream, Fish & Grains Recipe Dry Dog
                                                 Food, 22.5 lbs.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-american-waters-dry-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-american-waters-dry-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:drydogfoodgrains:7:seatostreamdrydogfoodwgrain:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -1764,7 +1765,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_all_tab_select splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-small-breed-recipe-with-real-chicken-eggs-and-turkey-dry-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-small-breed-recipe-with-real-chicken-eggs-and-turkey-dry-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:drydogfoodgrains:8:smallbreeddrydogfoodwgrain:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab1.8_SmallBreedDryDogFoodWGrain.png"
@@ -1774,7 +1775,7 @@
                                             <p>ACANA Wholesome Grains Small Breed Recipe with Real Chicken, Eggs and
                                                 Turkey Dry</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-small-breed-recipe-with-real-chicken-eggs-and-turkey-dry-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-wholesome-grains-small-breed-recipe-with-real-chicken-eggs-and-turkey-dry-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:drydogfoodgrains:8:smallbreeddrydogfoodwgrain:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -1785,7 +1786,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_all_tab_select splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-rescue-care-for-adopted-dogs-free-run-poultry-liver-and-whole-oats-recipe-premium-dry-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-rescue-care-for-adopted-dogs-free-run-poultry-liver-and-whole-oats-recipe-premium-dry-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:drydogfoodgrains:9:rscpoultrydrydogfoodwgrain:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab1.9_RSCPoultryDryDogFoodWGrain.png"
@@ -1796,7 +1797,7 @@
                                                 Oats Recipe Premium Dry
                                                 Food, 22.5 lbs.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-rescue-care-for-adopted-dogs-free-run-poultry-liver-and-whole-oats-recipe-premium-dry-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-rescue-care-for-adopted-dogs-free-run-poultry-liver-and-whole-oats-recipe-premium-dry-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:drydogfoodgrains:9:rscpoultrydrydogfoodwgrain:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -1817,7 +1818,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusd_drydog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-red-meat-dry-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-red-meat-dry-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:1:redmeatdrydogfoodgrainfree:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab2.1_RedMeatDryDogFoodGrainFree.png"
@@ -1828,7 +1829,7 @@
                                                 Lamb Dry Dog Food, 25
                                                 lbs.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-red-meat-dry-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-red-meat-dry-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:1:redmeatdrydogfoodgrainfree:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -1839,7 +1840,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusd_drydog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-free-run-poultry-dry-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-free-run-poultry-dry-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:2:poultrydrydogfoodgrainfree:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab2.2_PoultryDryDogFoodGrainFree.png"
@@ -1850,7 +1851,7 @@
                                                 Eggs Dry Dog Food, 25 lbs.
                                             </p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-free-run-poultry-dry-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-free-run-poultry-dry-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:2:poultrydrydogfoodgrainfree:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -1861,7 +1862,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusd_drydog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-puppy-and-junior-dry-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-puppy-and-junior-dry-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:3:puppydrydogfoodgrainfree:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab2.3_PuppyDryDogFoodGrainFree.png"
@@ -1871,7 +1872,7 @@
                                             <p>ACANA Grain-Free Chicken Turkey Fish Cage-Free Eggs Dry Puppy Food,
                                                 25 lbs.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-puppy-and-junior-dry-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-puppy-and-junior-dry-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:3:puppydrydogfoodgrainfree:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -1882,7 +1883,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusd_drydog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-wild-atlantic-dry-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-wild-atlantic-dry-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:4:wildatlanticdrydogfoodgrainfree:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab2.4_WildAtlanticDryDogFoodGrainFree.png"
@@ -1893,7 +1894,7 @@
                                                 Dry Dog Food, 25 lbs.
                                             </p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-wild-atlantic-dry-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-wild-atlantic-dry-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:4:wildatlanticdrydogfoodgrainfree:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -1904,7 +1905,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusd_drydog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-lamb-and-apple-recipe-dry-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-lamb-and-apple-recipe-dry-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:5:singleslambappledrydogfoodgrainfree:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab2.5_SinglesLambAppleDryDogFoodGrainFree.png"
@@ -1914,7 +1915,7 @@
                                             <p>ACANA Singles Limited Ingredient Diet High Protein Lamb & Apple Dry
                                                 Dog Food, 25 lbs.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-lamb-and-apple-recipe-dry-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-lamb-and-apple-recipe-dry-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:5:singleslambappledrydogfoodgrainfree:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -1926,7 +1927,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusd_drydog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-beef-and-pumpkin-recipe-dry-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-beef-and-pumpkin-recipe-dry-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:6:singlesbeefpumpkindrydogfoodgrainfree:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab2.6_SinglesBeefPumpkinDryDogFoodGrainFree.png"
@@ -1937,7 +1938,7 @@
                                                 Pumpkin Dry Dog Food, 25
                                                 lbs.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-beef-and-pumpkin-recipe-dry-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-beef-and-pumpkin-recipe-dry-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:6:singlesbeefpumpkindrydogfoodgrainfree:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -1949,7 +1950,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusd_drydog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-freshwater-fish-dry-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-freshwater-fish-dry-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:7:freshwaterfishdrydogfoodgrainfree:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab2.7_FreshWaterFishDryDogFoodGrainFree.png"
@@ -1959,7 +1960,7 @@
                                             <p>ACANA Grain-Free Freshwater Fish Whole Trout Catfish and Perch Dry
                                                 Dog Food, 25 lbs.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-freshwater-fish-dry-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-freshwater-fish-dry-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:7:freshwaterfishdrydogfoodgrainfree:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -1971,7 +1972,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusd_drydog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-light-and-fit-dry-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-light-and-fit-dry-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:8:lightfitchickendrydogfoodgrainfree:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab2.8_LightFitChickenDryDogFoodGrainFree.png"
@@ -1982,7 +1983,7 @@
                                                 Dry Dog Food, 25 lbs.
                                             </p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-light-and-fit-dry-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-light-and-fit-dry-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:8:lightfitchickendrydogfoodgrainfree:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -1994,7 +1995,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusd_drydog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-meadowlands-dry-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-meadowlands-dry-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:9:meadowlanddrydogfoodgrainfree:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab2.9_MeadowlandDryDogFoodGrainFree.png"
@@ -2005,7 +2006,7 @@
                                                 Turkey Fish Cage-Free
                                                 Eggs Dry Dog Food, 25 lbs.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-meadowlands-dry-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-meadowlands-dry-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:9:meadowlanddrydogfoodgrainfree:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2017,7 +2018,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusd_drydog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-grasslands-dry-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-grasslands-dry-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:10:grasslandsdrydogfoodgrainfree:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab2.10_GrasslandsDryDogFoodGrainFree.png"
@@ -2028,7 +2029,7 @@
                                                 Duck Trout and Quail Dry
                                                 Dog Food, 25 lbs.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-grasslands-dry-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-grasslands-dry-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:10:grasslandsdrydogfoodgrainfree:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2040,7 +2041,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusd_drydog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-appalachian-ranch-dry-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-appalachian-ranch-dry-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:11:appalachianranchdrydogfoodgrainfree:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab2.11_AppalachianRanchDryDogFoodGrainFree.png"
@@ -2051,7 +2052,7 @@
                                                 Beef Pork Lamb Bison and
                                                 Fish Dry Dog Food, 25 lbs.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-appalachian-ranch-dry-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-appalachian-ranch-dry-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:11:appalachianranchdrydogfoodgrainfree:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2063,7 +2064,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusd_drydog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-duck-and-pear-recipe-dry-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-duck-and-pear-recipe-dry-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:12:singlesduckpeardrydogfoodgrainfree:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab2.12_SinglesDuckPearDryDogFoodGrainFree.png"
@@ -2074,7 +2075,7 @@
                                                 Pear Dry Dog Food, 25
                                                 lbs.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-duck-and-pear-recipe-dry-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-duck-and-pear-recipe-dry-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:12:singlesduckpeardrydogfoodgrainfree:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2086,7 +2087,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrusd_drydog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-pork-and-squash-recipe-dry-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-pork-and-squash-recipe-dry-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:13:singlesporksquashdrydogfoodgrainfree:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab2.13_SinglesPorkSquashDryDogFoodGrainFree.png"
@@ -2097,7 +2098,7 @@
                                                 Squash Dry Dog Food, 25
                                                 lbs.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-pork-and-squash-recipe-dry-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-pork-and-squash-recipe-dry-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:grainfreedrydogfood:13:singlesporksquashdrydogfoodgrainfree:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2119,7 +2120,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_wetdog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-grain-free-premium-chunks-beef-recipe-in-bone-broth-wet-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-grain-free-premium-chunks-beef-recipe-in-bone-broth-wet-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:wetdogfood:1:beefwetdogfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab3.1_BeefWetDogFood.png"
@@ -2129,7 +2130,7 @@
                                             <p>ACANA Grain-Free Premium Chunks Beef Recipe in Bone Broth Wet Dog
                                                 Food, 12.8 oz.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-grain-free-premium-chunks-beef-recipe-in-bone-broth-wet-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-grain-free-premium-chunks-beef-recipe-in-bone-broth-wet-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:wetdogfood:1:beefwetdogfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2140,7 +2141,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_wetdog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-grain-free-premium-chunks-poultry-recipe-in-bone-broth-wet-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-grain-free-premium-chunks-poultry-recipe-in-bone-broth-wet-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:wetdogfood:2:chickenwetdogfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab3.2_ChickenWetDogFood.png"
@@ -2150,7 +2151,7 @@
                                             <p>ACANA Grain-Free Premium Chunks Poultry Recipe in Bone Broth Wet Dog
                                                 Food, 12.8 oz.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-grain-free-premium-chunks-poultry-recipe-in-bone-broth-wet-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-grain-free-premium-chunks-poultry-recipe-in-bone-broth-wet-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:wetdogfood:2:chickenwetdogfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2161,7 +2162,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_wetdog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-grain-free-premium-pate-puppy-recipe-in-bone-broth-wet-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-grain-free-premium-pate-puppy-recipe-in-bone-broth-wet-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:wetdogfood:3:puppywetdogfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab3.3_PuppyWetDogFood.png"
@@ -2171,7 +2172,7 @@
                                             <p>ACANA Grain-Free Premium Pate Puppy Recipe in Bone Broth Wet Dog
                                                 Food, 12.8 oz.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-grain-free-premium-pate-puppy-recipe-in-bone-broth-wet-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-grain-free-premium-pate-puppy-recipe-in-bone-broth-wet-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:wetdogfood:3:puppywetdogfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2183,7 +2184,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_wetdog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-grain-free-premium-chunks-duck-recipe-in-bone-broth-wet-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-grain-free-premium-chunks-duck-recipe-in-bone-broth-wet-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:wetdogfood:4:duckwetdogfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab3.4_DuckWetDogFood.png"
@@ -2193,7 +2194,7 @@
                                             <p>ACANA Grain-Free Premium Chunks Duck Recipe in Bone Broth Wet Dog
                                                 Food, 12.8 oz.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-grain-free-premium-chunks-duck-recipe-in-bone-broth-wet-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-grain-free-premium-chunks-duck-recipe-in-bone-broth-wet-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:wetdogfood:4:duckwetdogfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2205,7 +2206,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_wetdog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-grain-free-premium-chunks-lamb-recipe-in-bone-broth-wet-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-grain-free-premium-chunks-lamb-recipe-in-bone-broth-wet-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:wetdogfood:5:lambwetdogfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab3.5_LambWetDogFood.png"
@@ -2216,7 +2217,7 @@
                                                 Food, 12.8 oz., Case of 12
                                             </p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-grain-free-premium-chunks-lamb-recipe-in-bone-broth-wet-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-grain-free-premium-chunks-lamb-recipe-in-bone-broth-wet-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:wetdogfood:5:lambwetdogfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2228,7 +2229,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_wetdog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-grain-free-premium-chunks-pork-recipe-in-bone-broth-wet-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-grain-free-premium-chunks-pork-recipe-in-bone-broth-wet-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:wetdogfood:6:porkwetdogfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab3.6_PorkWetDogFood.png"
@@ -2238,7 +2239,7 @@
                                             <p>ACANA Grain-Free Premium Chunks Pork Recipe in Bone Broth Wet Dog
                                                 Food, 12.8 oz.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-grain-free-premium-chunks-pork-recipe-in-bone-broth-wet-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-grain-free-premium-chunks-pork-recipe-in-bone-broth-wet-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:wetdogfood:6:porkwetdogfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2259,7 +2260,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_treatsdog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-indoor-entree-dry-cat-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-indoor-entree-dry-cat-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:drycatfood:1:indoordrycatfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab4.1_IndoorDryCatFood.png"
@@ -2270,7 +2271,7 @@
                                                 Rabbit Dry Cat Food, 10
                                                 lbs.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-indoor-entree-dry-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-indoor-entree-dry-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:drycatfood:1:indoordrycatfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2281,7 +2282,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_treatsdog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-first-feast-dry-cat-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-first-feast-dry-cat-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:drycatfood:2:firstfeastdrycatfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab4.2_FirstFeastDryCatFood.png"
@@ -2291,7 +2292,7 @@
                                             <p>ACANA First Feast For Kittens Chicken and Fish Dry Cat Food, 4 lbs.
                                             </p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-first-feast-dry-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-first-feast-dry-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:drycatfood:2:firstfeastdrycatfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2302,7 +2303,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_treatsdog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-bountiful-catch-dry-cat-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-bountiful-catch-dry-cat-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:drycatfood:3:bountifulcatchdrycatfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab4.3_BountifulCatchDryCatFood.png"
@@ -2312,7 +2313,7 @@
                                             <p>ACANA Bountiful Catch Salmon Catfish and Herring Dry Cat Food, 10
                                                 lbs.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-bountiful-catch-dry-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-bountiful-catch-dry-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:drycatfood:3:bountifulcatchdrycatfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2323,7 +2324,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_treatsdog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-wild-atlantic-dry-cat-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-wild-atlantic-dry-cat-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:drycatfood:4:wildatlanticdrycatfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab4.4_WildAtlanticDryCatFood.png"
@@ -2334,7 +2335,7 @@
                                                 Dry Cat Food, 10 lbs.
                                             </p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-wild-atlantic-dry-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-wild-atlantic-dry-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:drycatfood:4:wildatlanticdrycatfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2345,7 +2346,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_treatsdog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-meadowlands-dry-cat-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-meadowlands-dry-cat-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:drycatfood:5:meadowlandsdrycatfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab4.5_MeadowlandsDryCatFood.png"
@@ -2355,7 +2356,7 @@
                                             <p>ACANA Grain-Free Meadowlands Chicken Turkey Fish and Cage-Free Eggs
                                                 Dry Cat Food, 10 lbs.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-meadowlands-dry-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-meadowlands-dry-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:drycatfood:5:meadowlandsdrycatfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2367,7 +2368,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_treatsdog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-grasslands-dry-cat-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-grasslands-dry-cat-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:drycatfood:6:grasslandsdrycatfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab4.6_GrasslandsDryCatFood.png"
@@ -2377,7 +2378,7 @@
                                             <p>ACANA Grain-Free Grasslands Chicken Duck Turkey Fish and Quail Dry
                                                 Cat Food, 10 lbs.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-grasslands-dry-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-grasslands-dry-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:drycatfood:6:grasslandsdrycatfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2389,7 +2390,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_treatsdog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-homestead-harvest-dry-cat-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-homestead-harvest-dry-cat-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:drycatfood:7:homesteaddrycatfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab4.7_HomesteadDryCatFood.png"
@@ -2399,7 +2400,7 @@
                                             <p>ACANA Homestead Harvest Chicken Turkey and Duck Dry Cat Food, 10 lbs.
                                             </p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-homestead-harvest-dry-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-homestead-harvest-dry-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:drycatfood:7:homesteaddrycatfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2421,7 +2422,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_freedog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/orijen-original-entree-in-bone-broth-cat-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/orijen-original-entree-in-bone-broth-cat-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:wetcatfood:1:kittenchickenwetcatfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab5.1_KittenChickenWetCatFood.png"
@@ -2431,7 +2432,7 @@
                                             <p>ACANA Chicken + Tuna Recipe in Bone Broth for Kittens Wet Cat Food, 3
                                                 oz., Case of 24</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/orijen-original-entree-in-bone-broth-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/orijen-original-entree-in-bone-broth-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:wetcatfood:1:kittenchickenwetcatfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2442,7 +2443,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_freedog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-tuna-chicken-in-bone-broth-cat-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-tuna-chicken-in-bone-broth-cat-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:wetcatfood:2:chickentunawetcatfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab5.2_ChickenTunaWetCatFood.png"
@@ -2452,7 +2453,7 @@
                                             <p>ACANA Tuna + Chicken in Bone Broth Wet Cat Food, 3 oz., Case of 24
                                             </p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-tuna-chicken-in-bone-broth-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-tuna-chicken-in-bone-broth-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:wetcatfood:2:chickentunawetcatfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2463,7 +2464,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_freedog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-salmon-chicken-in-bone-broth-cat-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-salmon-chicken-in-bone-broth-cat-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:wetcatfood:3:salmonchickenwetcatfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab5.3_SalmonChickenWetCatFood.png"
@@ -2473,7 +2474,7 @@
                                             <p>ACANA Salmon + Chicken in Bone Broth Wet Cat Food, 3 oz., Case of 24
                                             </p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-salmon-chicken-in-bone-broth-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-salmon-chicken-in-bone-broth-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:wetcatfood:3:salmonchickenwetcatfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2485,7 +2486,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_freedog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-chicken-fish-recipe-in-bone-broth-cat-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-chicken-fish-recipe-in-bone-broth-cat-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:wetcatfood:4:chickenfishwetcatfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab5.4_ChickenFishWetCatFood.png"
@@ -2495,7 +2496,7 @@
                                             <p>ACANA Chicken + Fish Recipe in Bone Broth Wet Cat Food, 3 oz., Case
                                                 of 24</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-chicken-fish-recipe-in-bone-broth-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-chicken-fish-recipe-in-bone-broth-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:wetcatfood:4:chickenfishwetcatfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2507,7 +2508,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_freedog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/orijen-duck-chicken-entree-in-bone-broth-cat-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/orijen-duck-chicken-entree-in-bone-broth-cat-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:wetcatfood:5:beefchickenwetcatfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab5.5_BeefChickenWetCatFood.png"
@@ -2517,7 +2518,7 @@
                                             <p>ACANA Beef, Chicken + Tuna Recipe in Bone Broth Wet Cat Food, 3 oz.,
                                                 Case of 24</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/orijen-duck-chicken-entree-in-bone-broth-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/orijen-duck-chicken-entree-in-bone-broth-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:wetcatfood:5:beefchickenwetcatfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2529,7 +2530,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_freedog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-beef-and-chicken-tuna-recipe-in-bone-broth-cat-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-beef-and-chicken-tuna-recipe-in-bone-broth-cat-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:wetcatfood:6:lambliverwetcatfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab5.6_LambLiverWetCatFood.png"
@@ -2539,7 +2540,7 @@
                                             <p>ACANA Lamb + Lamb Liver in Bone Broth Wet Cat Food, 3 oz., Case of 24
                                             </p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-beef-and-chicken-tuna-recipe-in-bone-broth-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-beef-and-chicken-tuna-recipe-in-bone-broth-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:wetcatfood:6:lambliverwetcatfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2560,7 +2561,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_catdog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-patties-grain-free-high-protein-ranch-raised-beef-recipe-wet-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-patties-grain-free-high-protein-ranch-raised-beef-recipe-wet-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:freezedrieddogfood:1:pattiebeeffrzdrddogfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab6.1_PattieBeefFrzDrdDogFood.png"
@@ -2572,7 +2573,7 @@
                                                 Dried Patties Dog Food, 14
                                                 oz.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-patties-grain-free-high-protein-ranch-raised-beef-recipe-wet-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-patties-grain-free-high-protein-ranch-raised-beef-recipe-wet-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:freezedrieddogfood:1:pattiebeeffrzdrddogfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2583,7 +2584,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_catdog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-patties-grain-free-high-protein-duck-recipe-wet-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-patties-grain-free-high-protein-duck-recipe-wet-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:freezedrieddogfood:2:pattieduckfrzdrddogfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab6.2_PattieDuckFrzDrdDogFood.png"
@@ -2594,7 +2595,7 @@
                                                 Recipe Freeze Dried Patties
                                                 Dog Food, 14 oz.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-patties-grain-free-high-protein-duck-recipe-wet-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-patties-grain-free-high-protein-duck-recipe-wet-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:freezedrieddogfood:2:pattieduckfrzdrddogfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2605,7 +2606,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_catdog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-patties-grain-free-high-protein-free-run-chicken-recipe-wet-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-patties-grain-free-high-protein-free-run-chicken-recipe-wet-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:freezedrieddogfood:3:pattiechickenfrzdrddogfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab6.3_PattieChickenFrzDrdDogFood.png"
@@ -2617,7 +2618,7 @@
                                                 Dried Patties Dog Food, 14
                                                 oz.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-patties-grain-free-high-protein-free-run-chicken-recipe-wet-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-patties-grain-free-high-protein-free-run-chicken-recipe-wet-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:freezedrieddogfood:3:pattiechickenfrzdrddogfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2628,7 +2629,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_catdog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-morsels-grain-free-high-protein-ranch-raised-beef-recipe-wet-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-morsels-grain-free-high-protein-ranch-raised-beef-recipe-wet-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:freezedrieddogfood:4:morselbeeffrzdrddogfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab6.4_MorselBeefFrzDrdDogFood.png"
@@ -2639,7 +2640,7 @@
                                                 Ranch-Raised Beef Recipe Freeze
                                                 Dried Morsels Dog Food, 8 oz.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-morsels-grain-free-high-protein-ranch-raised-beef-recipe-wet-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-morsels-grain-free-high-protein-ranch-raised-beef-recipe-wet-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:freezedrieddogfood:4:morselbeeffrzdrddogfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2650,7 +2651,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_catdog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-morsels-grain-free-high-protein-free-run-chicken-recipe-wet-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-morsels-grain-free-high-protein-free-run-chicken-recipe-wet-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:freezedrieddogfood:5:morselchickenfrzdrddogfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab6.5_MorselChickenFrzDrdDogFood.png"
@@ -2661,7 +2662,7 @@
                                                 Chicken Recipe Freeze
                                                 Dried Morsels Dog Food, 8 oz.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-morsels-grain-free-high-protein-free-run-chicken-recipe-wet-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-morsels-grain-free-high-protein-free-run-chicken-recipe-wet-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:freezedrieddogfood:5:morselchickenfrzdrddogfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2673,7 +2674,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_catdog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-morsels-grain-free-high-protein-duck-recipe-wet-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-morsels-grain-free-high-protein-duck-recipe-wet-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:freezedrieddogfood:6:morselduckfrzdrddogfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab6.6_MorselDuckFrzDrdDogFood.png"
@@ -2684,7 +2685,7 @@
                                                 Recipe Freeze Dried Morsels
                                                 Dog Food, 8 oz.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-morsels-grain-free-high-protein-duck-recipe-wet-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-morsels-grain-free-high-protein-duck-recipe-wet-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:freezedrieddogfood:6:morselduckfrzdrddogfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2696,7 +2697,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_catdog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-morsels-grain-free-high-protein-free-run-turkey-recipe-wet-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-morsels-grain-free-high-protein-free-run-turkey-recipe-wet-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:freezedrieddogfood:7:morsalturkeyfrzdrddogfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab6.7_MorsalTurkeyFrzDrdDogFood.png"
@@ -2707,7 +2708,7 @@
                                                 Turkey Recipe Freeze
                                                 Dried Morsels Dog Food, 8 oz.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-morsels-grain-free-high-protein-free-run-turkey-recipe-wet-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-morsels-grain-free-high-protein-free-run-turkey-recipe-wet-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:freezedrieddogfood:7:morsalturkeyfrzdrddogfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2719,7 +2720,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_catdog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-patties-grain-free-high-protein-free-run-turkey-recipe-wet-dog-food" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-patties-grain-free-high-protein-free-run-turkey-recipe-wet-dog-food"
                                                 manual_cm_sp="sponsoredbrandpage:acana:freezedrieddogfood:8:pattieturkeyfrzdrddogfood:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab6.8_PattieTurkeyFrzDrdDogFood.png"
@@ -2730,7 +2731,7 @@
                                                 Turkey Recipe Freeze
                                                 Dried Patties Dog Food, 14 oz.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-patties-grain-free-high-protein-free-run-turkey-recipe-wet-dog-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-freeze-dried-patties-grain-free-high-protein-free-run-turkey-recipe-wet-dog-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:freezedrieddogfood:8:pattieturkeyfrzdrddogfood:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2751,7 +2752,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_wetcatDog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-freeze-dried-lamb-and-apple-dog-treats" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-freeze-dried-lamb-and-apple-dog-treats"
                                                 manual_cm_sp="sponsoredbrandpage:acana:dogtreats:1:lambappledogtreat:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab7.1_LambAppleDogTreat.png"
@@ -2760,7 +2761,7 @@
                                         <div class="citrus_product_info22">
                                             <p>ACANA Singles Freeze-Dried Lamb and Apple Dog Treats, 3.25 oz.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-freeze-dried-lamb-and-apple-dog-treats" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-freeze-dried-lamb-and-apple-dog-treats"
                                             manual_cm_sp="sponsoredbrandpage:acana:dogtreats:1:lambappledogtreat:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2771,7 +2772,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_wetcatDog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-freeze-dried-duck-and-pear-dog-treats" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-freeze-dried-duck-and-pear-dog-treats"
                                                 manual_cm_sp="sponsoredbrandpage:acana:dogtreats:2:duckpeardogtreat:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab7.2_DuckPearDogTreat.png"
@@ -2780,7 +2781,7 @@
                                         <div class="citrus_product_info22">
                                             <p>ACANA Singles Freeze-Dried Duck and Pear Dog Treats, 3.25 oz.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-freeze-dried-duck-and-pear-dog-treats" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-freeze-dried-duck-and-pear-dog-treats"
                                             manual_cm_sp="sponsoredbrandpage:acana:dogtreats:2:duckpeardogtreat:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2791,7 +2792,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_wetcatDog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-freeze-dried-beef-and-pumpkin-dog-treats" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-freeze-dried-beef-and-pumpkin-dog-treats"
                                                 manual_cm_sp="sponsoredbrandpage:acana:dogtreats:3:beefpumpkindogtreat:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab7.3_BeefPumpkinDogTreat.png"
@@ -2800,7 +2801,7 @@
                                         <div class="citrus_product_info22">
                                             <p>ACANA Singles Freeze-Dried Beef and Pumpkin Dog Treats, 3.25 oz.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-freeze-dried-beef-and-pumpkin-dog-treats" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-singles-freeze-dried-beef-and-pumpkin-dog-treats"
                                             manual_cm_sp="sponsoredbrandpage:acana:dogtreats:3:beefpumpkindogtreat:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2812,7 +2813,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_wetcatDog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-beef-liver-recipe-biscuits-for-large-dogs" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-beef-liver-recipe-biscuits-for-large-dogs"
                                                 manual_cm_sp="sponsoredbrandpage:acana:dogtreats:4:beeflargedogtreat:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab7.4_BeefLargeDogTreat.png"
@@ -2822,7 +2823,7 @@
                                             <p>ACANA High Protein Crunchy Beef Liver Recipe Biscuits for Large Dogs,
                                                 9 oz.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-beef-liver-recipe-biscuits-for-large-dogs" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-beef-liver-recipe-biscuits-for-large-dogs"
                                             manual_cm_sp="sponsoredbrandpage:acana:dogtreats:4:beeflargedogtreat:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2834,7 +2835,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_wetcatDog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-beef-liver-recipe-biscuits-for-small-dogs" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-beef-liver-recipe-biscuits-for-small-dogs"
                                                 manual_cm_sp="sponsoredbrandpage:acana:dogtreats:5:beefsmalldogtreat:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab7.5_BeefSmallDogTreat.png"
@@ -2844,7 +2845,7 @@
                                             <p>ACANA High Protein Crunchy Beef Liver Recipe Biscuits for Small Dogs,
                                                 9 oz.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-beef-liver-recipe-biscuits-for-small-dogs" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-beef-liver-recipe-biscuits-for-small-dogs"
                                             manual_cm_sp="sponsoredbrandpage:acana:dogtreats:5:beefsmalldogtreat:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2856,7 +2857,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_wetcatDog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-chicken-liver-recipe-biscuits-for-large-dogs" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-chicken-liver-recipe-biscuits-for-large-dogs"
                                                 manual_cm_sp="sponsoredbrandpage:acana:dogtreats:6:chickenlargedogtreat:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab7.6_ChickenLargeDogTreat.png"
@@ -2866,7 +2867,7 @@
                                             <p>ACANA High Protein Crunchy Chicken Liver Recipe Biscuits for Large
                                                 Dogs, 9 oz.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-chicken-liver-recipe-biscuits-for-large-dogs" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-chicken-liver-recipe-biscuits-for-large-dogs"
                                             manual_cm_sp="sponsoredbrandpage:acana:dogtreats:6:chickenlargedogtreat:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2878,7 +2879,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_wetcatDog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-chicken-liver-recipe-biscuits-for-small-dogs" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-chicken-liver-recipe-biscuits-for-small-dogs"
                                                 manual_cm_sp="sponsoredbrandpage:acana:dogtreats:7:chickensmalldogtreat:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab7.7_ChickenSmallDogTreat.png"
@@ -2888,7 +2889,7 @@
                                             <p>ACANA High Protein Crunchy Chicken Liver Recipe Biscuits for Small
                                                 Dogs, 9 oz.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-chicken-liver-recipe-biscuits-for-small-dogs" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-chicken-liver-recipe-biscuits-for-small-dogs"
                                             manual_cm_sp="sponsoredbrandpage:acana:dogtreats:7:chickensmalldogtreat:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2900,7 +2901,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_wetcatDog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-turkey-liver-recipe-biscuits-for-large-dogs" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-turkey-liver-recipe-biscuits-for-large-dogs"
                                                 manual_cm_sp="sponsoredbrandpage:acana:dogtreats:8:turkeylargedogtreat:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab7.8_TurkeyLargeDogTreat.png"
@@ -2910,7 +2911,7 @@
                                             <p>ACANA High Protein Crunchy Turkey Liver Recipe Biscuits for Large
                                                 Dogs, 9 oz.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-turkey-liver-recipe-biscuits-for-large-dogs" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-turkey-liver-recipe-biscuits-for-large-dogs"
                                             manual_cm_sp="sponsoredbrandpage:acana:dogtreats:8:turkeylargedogtreat:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2922,7 +2923,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_wetcatDog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-turkey-liver-recipe-biscuits-for-small-dogs" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-turkey-liver-recipe-biscuits-for-small-dogs"
                                                 manual_cm_sp="sponsoredbrandpage:acana:dogtreats:9:turkeysmalldogtreat:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab7.9_TurkeySmallDogTreat.png"
@@ -2932,7 +2933,7 @@
                                             <p>ACANA High Protein Crunchy Turkey Liver Recipe Biscuits for Small
                                                 Dogs, 9 oz.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-turkey-liver-recipe-biscuits-for-small-dogs" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-turkey-liver-recipe-biscuits-for-small-dogs"
                                             manual_cm_sp="sponsoredbrandpage:acana:dogtreats:9:turkeysmalldogtreat:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2944,7 +2945,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_wetcatDog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-pork-liver-recipe-biscuits-for-large-dogs" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-pork-liver-recipe-biscuits-for-large-dogs"
                                                 manual_cm_sp="sponsoredbrandpage:acana:dogtreats:10:porklargedogtreat:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab7.10_PorkLargeDogTreat.png"
@@ -2954,7 +2955,7 @@
                                             <p>ACANA High Protein Crunchy Pork Liver Recipe Biscuits for Large Dogs,
                                                 9 oz.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-pork-liver-recipe-biscuits-for-large-dogs" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-pork-liver-recipe-biscuits-for-large-dogs"
                                             manual_cm_sp="sponsoredbrandpage:acana:dogtreats:10:porklargedogtreat:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -2966,7 +2967,7 @@
                                     class="citrus_item_section__tab_content_item citrusfilterMeetDiv citrus_wetcatDog splide__slide">
                                     <div class="citrus-meet-tab-product">
                                         <div class="citrus-inner-img22">
-                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-pork-liver-recipe-biscuits-for-small-dogs" "/shop/en/petcostore"
+                                            <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-pork-liver-recipe-biscuits-for-small-dogs"
                                                 manual_cm_sp="sponsoredbrandpage:acana:dogtreats:11:porksmalldogtreat:product"
                                                 onclick="clickTrackLink(this);"><img
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-tab7.11_PorkSmallDogTreat.png"
@@ -2976,7 +2977,7 @@
                                             <p>ACANA High Protein Crunchy Pork Liver Recipe Biscuits for Small Dogs,
                                                 9 oz.</p>
                                         </div>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-pork-liver-recipe-biscuits-for-small-dogs" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-high-protein-crunchy-pork-liver-recipe-biscuits-for-small-dogs"
                                             manual_cm_sp="sponsoredbrandpage:acana:dogtreats:11:porksmalldogtreat:product"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -3074,7 +3075,7 @@
                 crave-worthy
                 taste.</p>
             <a class="citrusAcana__CTA citrusAcana__mobile_hide"
-                href="https://www.petco.com/shop/en/petcostore/brand/acana/cat/cat-food/wet-cat-food" "/shop/en/petcostore"
+                href="https://www.petco.com/shop/en/petcostore/brand/acana/cat/cat-food/wet-cat-food"
                 manual_cm_sp="sponsoredbrandpage:acana:trynewacanapremiumpate:1:exploreacanapremiumpate:shopall"
                 onclick="clickTrackLink(this);">Shop All</a>
         </div>
@@ -3099,7 +3100,7 @@
                             <div class="citrusAcana__newPremium__productShot--col">
                                 <div class="citrusAcana__newPremium__productShot--card">
                                     <div class="citrusAcana__newPremium__productShot--card__img">
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/orijen-original-entree-in-bone-broth-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/orijen-original-entree-in-bone-broth-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:trynewacanapremiumpate:2:kittenchickenwetcatfood:product"
                                             onclick="clickTrackLink(this);">
                                             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-Image 40.png"
@@ -3109,7 +3110,7 @@
                                     <div class="citrusAcana__newPremium__productShot--card__body">
                                         <p>ACANA Chicken + Tuna Recipe in Bone Broth for Kittens Wet Cat Food, 3
                                             oz., Case of 24</p>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/orijen-original-entree-in-bone-broth-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/orijen-original-entree-in-bone-broth-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:trynewacanapremiumpate:2:kittenchickenwetcatfood:shopnow"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -3119,7 +3120,7 @@
                             <div class="citrusAcana__newPremium__productShot--col">
                                 <div class="citrusAcana__newPremium__productShot--card">
                                     <div class="citrusAcana__newPremium__productShot--card__img">
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-tuna-chicken-in-bone-broth-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-tuna-chicken-in-bone-broth-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:trynewacanapremiumpate:3:chickentunawetcatfood:product"
                                             onclick="clickTrackLink(this);">
                                             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-Image 41.png"
@@ -3128,7 +3129,7 @@
                                     </div>
                                     <div class="citrusAcana__newPremium__productShot--card__body">
                                         <p>ACANA Tuna + Chicken in Bone Broth Wet Cat Food, 3 oz., Case of 24</p>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-tuna-chicken-in-bone-broth-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-tuna-chicken-in-bone-broth-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:trynewacanapremiumpate:3:chickentunawetcatfood:shopnow"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -3138,7 +3139,7 @@
                             <div class="citrusAcana__newPremium__productShot--col">
                                 <div class="citrusAcana__newPremium__productShot--card">
                                     <div class="citrusAcana__newPremium__productShot--card__img">
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-salmon-chicken-in-bone-broth-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-salmon-chicken-in-bone-broth-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:trynewacanapremiumpate:4:salmonchickenwetcatfood:product"
                                             onclick="clickTrackLink(this);">
                                             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-Image 42.png"
@@ -3147,7 +3148,7 @@
                                     </div>
                                     <div class="citrusAcana__newPremium__productShot--card__body">
                                         <p>ACANA Salmon + Chicken in Bone Broth Wet Cat Food, 3 oz., Case of 24</p>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-salmon-chicken-in-bone-broth-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-salmon-chicken-in-bone-broth-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:trynewacanapremiumpate:4:salmonchickenwetcatfood:shopnow"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -3157,7 +3158,7 @@
                             <div class="citrusAcana__newPremium__productShot--col">
                                 <div class="citrusAcana__newPremium__productShot--card">
                                     <div class="citrusAcana__newPremium__productShot--card__img">
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-chicken-fish-recipe-in-bone-broth-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-chicken-fish-recipe-in-bone-broth-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:trynewacanapremiumpate:5:chickenfishwetcatfood:product"
                                             onclick="clickTrackLink(this);">
                                             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-Image 43.png"
@@ -3167,7 +3168,7 @@
                                     <div class="citrusAcana__newPremium__productShot--card__body">
                                         <p>ACANA Chicken + Fish Recipe in Bone Broth Wet Cat Food, 3 oz., Case of 24
                                         </p>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-chicken-fish-recipe-in-bone-broth-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-chicken-fish-recipe-in-bone-broth-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:trynewacanapremiumpate:5:chickenfishwetcatfood:shopnow"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -3177,7 +3178,7 @@
                             <div class="citrusAcana__newPremium__productShot--col">
                                 <div class="citrusAcana__newPremium__productShot--card">
                                     <div class="citrusAcana__newPremium__productShot--card__img">
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/orijen-duck-chicken-entree-in-bone-broth-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/orijen-duck-chicken-entree-in-bone-broth-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:trynewacanapremiumpate:6:beefchickenwetcatfood:product"
                                             onclick="clickTrackLink(this);">
                                             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-Image 44.png"
@@ -3187,7 +3188,7 @@
                                     <div class="citrusAcana__newPremium__productShot--card__body">
                                         <p>ACANA Beef, Chicken + Tuna Recipe in Bone Broth Wet Cat Food, 3 oz., Case
                                             of 24</p>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/orijen-duck-chicken-entree-in-bone-broth-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/orijen-duck-chicken-entree-in-bone-broth-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:trynewacanapremiumpate:6:beefchickenwetcatfood:shopnow"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -3197,7 +3198,7 @@
                             <div class="citrusAcana__newPremium__productShot--col">
                                 <div class="citrusAcana__newPremium__productShot--card">
                                     <div class="citrusAcana__newPremium__productShot--card__img">
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-beef-and-chicken-tuna-recipe-in-bone-broth-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-beef-and-chicken-tuna-recipe-in-bone-broth-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:trynewacanapremiumpate:7:lambliverwetcatfood:product"
                                             onclick="clickTrackLink(this);">
                                             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-Image 45.png"
@@ -3206,7 +3207,7 @@
                                     </div>
                                     <div class="citrusAcana__newPremium__productShot--card__body">
                                         <p>ACANA Lamb + Lamb Liver in Bone Broth Wet Cat Food, 3 oz., Case of 24</p>
-                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-beef-and-chicken-tuna-recipe-in-bone-broth-cat-food" "/shop/en/petcostore"
+                                        <a href="https://www.petco.com/shop/en/petcostore/product/acana-beef-and-chicken-tuna-recipe-in-bone-broth-cat-food"
                                             manual_cm_sp="sponsoredbrandpage:acana:trynewacanapremiumpate:7:lambliverwetcatfood:shopnow"
                                             onclick="clickTrackLink(this);">Shop Now</a>
                                     </div>
@@ -3249,6 +3250,7 @@
 <script>
     // ------------------------------------------------------------------------
     // ------------------------------------------------------------------------
+    // ------------------------------------------------------------------------
     // tab carocel js
     var splides = document.querySelectorAll(".cirtus_meet_tabs_22");
     if (splides.length) {
@@ -3256,14 +3258,15 @@
             var splideElement = splides[i];
             var splideDefaultOptions = {
                 rewind: true,
+                arrows: true,
                 type: "slide",
+                focus: "left",
                 autoplay: false,
                 rewindSpeed: 500,
                 speed: 500,
                 pauseOnHover: true,
                 perPage: 6,
                 perMove: 2,
-                width: "100%",
                 breakpoints: {
                     375: {
                         perPage: 1,
@@ -3281,7 +3284,7 @@
                         perPage: 4,
                     },
                     1200: {
-                        perPage: 5,
+                        perPage: 6,
                     },
                     1440: {
                         perPage: 6,
@@ -3349,13 +3352,59 @@
         });
     }
     //for Dog best seller tab switcher
+    // --------------------for hiding arrow-------------------------
+    /* for hiding arrow set opacity 0 in style sheet
+    .cirtus_meet_tabs_22 .splide__arrow:disabled,
+    .citrus-meet-section__tab-content .splide__arrow:disabled {
+      opacity: 0;
+    }
+    */
+    arrowHide("splide01");
+    arrowHide("splide02");
+    arrowHide("splide04");
+    arrowHide("splide06");
+    arrowHide("splide07");
+    function arrowHide(id) {
+        var splide = new Splide("#" + id, {
+            focus: "right",
+        });
+        splide.on("visible", function (slide) {
+            //hides right arrow if last slide visible
+            if (
+                slide.index === splide.length - 1 &&
+                splide.Components &&
+                splide.Components.Arrows &&
+                splide.Components.Arrows.arrows &&
+                splide.Components.Arrows.arrows.next
+            ) {
+                if (!splide.Components.Arrows.arrows.next.disabled) {
+                    splide.Components.Arrows.arrows.next.disabled = true;
+                }
+            }
+            //hides left arrow if first slide visible
+            if (
+                slide.index === 0 &&
+                splide.Components &&
+                splide.Components.Arrows &&
+                splide.Components.Arrows.arrows &&
+                splide.Components.Arrows.arrows.prev
+            ) {
+                if (!splide.Components.Arrows.arrows.prev.disabled) {
+                    splide.Components.Arrows.arrows.prev.disabled = true;
+                }
+            }
+        });
 
+        splide.mount();
+    }
+    // -------------------------------------------
     //slider script
 
-    new Splide(".citrusAcana__sliderBox", {
+    new Splide(".splide", {
         type: "loop",
         interval: 5000,
         autoplay: true,
     }).mount();
+
 
 </script>

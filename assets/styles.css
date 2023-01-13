@@ -525,11 +525,21 @@ button {
 }
 
 .citrus_product_info22 > p {
-  font-size: 13px;
+  font-family: "PetcoCircularTT-Regular", arial !important;
   color: #333333;
-  min-height: 82px;
-  display: block;
-  margin-top: 18px;
+  font-size: 13px;
+  text-align: left;
+  padding: 20px 0 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 4em;
+  margin-bottom: 24px;
 }
 
 .citrus-meet-tab-product > a {
@@ -557,14 +567,14 @@ button {
   -ms-flex-align: center;
   -webkit-box-align: center;
   align-items: center;
-  background: transparent;
+  background: #ffffff;
   border: 1px solid #122359;
   border-radius: 50%;
   cursor: pointer;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
-  height: 3.2em;
+  height: 2.2em;
   -ms-flex-pack: center;
   -webkit-box-pack: center;
   justify-content: center;
@@ -573,9 +583,8 @@ button {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: 3.2em;
+  width: 2.2em;
   z-index: 1;
 }
 
@@ -799,11 +808,14 @@ button {
   .citrus-meet-orijen-main21 {
     width: 350%;
   }
+  .citrus_item_section__tab_content_item {
+    max-width: 225px;
+  }
   .citrus_meet_tab_item {
     font-size: 12px;
   }
-  .cirtus_meet_tabs_main_22_hide_arrow .splide__arrows {
-    display: block;
+  .cirtus_meet_tabs_main_22 .splide__arrows {
+    display: none;
   }
   /* -------------------------- */
   .citrusAcana__sectionTitle h2 {
@@ -903,5 +915,8 @@ button {
   }
   .citrusAcana__thirdSlide__textContainer .citrusAcana__sliderText {
     width: 90%;
+  }
+  .citrus_item_section__tab_content_item {
+    margin: 0px 10px;
   }
 }
