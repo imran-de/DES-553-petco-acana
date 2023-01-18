@@ -787,7 +787,24 @@
     }
 
     .citrusAcana__newPremium__productShot--card__body p {
-        min-height: 60px;
+        font-family: "PetcoCircularTT-Regular", arial !important;
+        color: #333333;
+        font-size: 13px;
+        text-align: left;
+        text-decoration: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        max-height: 4em;
+        margin-bottom: 24px;
+
+    }
+
+    .citrusAcana__newPremium__leftImage {
+        padding-right: 30px;
     }
 
     /************************** The perfect recipe for every pet ****************************** */
@@ -846,7 +863,7 @@
         justify-content: center;
         column-gap: 10px;
         position: absolute;
-        bottom: -17px;
+        bottom: 0px;
         left: calc(100% / 2 - 50px);
         text-align: center;
         background: rgb(189 189 189 / 80%);
@@ -978,7 +995,7 @@
         color: #333333;
         font-size: 13px;
         text-align: left;
-        padding: 20px 0 20px;
+        padding: 0px 0 0px;
         margin-top: 20px;
         text-decoration: none;
         overflow: hidden;
@@ -1113,10 +1130,6 @@
 
         .citrusAcana__imgContainer .citrusAcana__mobile_hide img {
             height: 100vh;
-        }
-
-        ul.splide__pagination {
-            bottom: -7px;
         }
 
         .citrus_meet_tab_item {
@@ -1360,6 +1373,10 @@
         .citrusAcana__newPremium__productShotContainer {
             width: 100%;
             overflow-x: auto;
+        }
+
+        .citrusAcana__newPremium__leftImage {
+            padding-right: 0px;
         }
 
         .citrusAcana__newPremium__productShot--row {
