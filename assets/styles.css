@@ -1212,7 +1212,12 @@ button {
 }
 
 /* responsive styling start for small devices */
-
+@media all and (min-width: 1440px) {
+.citrusAcana__thirdSlide__col.left{
+  align-items: start;
+    margin-top: 8%;
+}
+}
 @media all and (max-width: 1440px) {
   .citrusAcana__firstSlide__middleContainer {
     height: 380px;
