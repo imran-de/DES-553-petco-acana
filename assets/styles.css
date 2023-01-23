@@ -611,10 +611,12 @@ a {
 .citrusAcana__firstSlide__middleContainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: start;
   align-items: center;
   padding: 0 20px;
   height: 400px;
+  row-gap: 20px;
+  margin-top: 5%;
 }
 
 .citrusAcana__logo {
@@ -669,7 +671,7 @@ a {
 .citrusAcana__secondSlideContainer {
   width: 1440px;
   max-width: 100%;
-  margin: auto;
+  margin: 0;
   background: #fff;
 }
 
@@ -687,6 +689,9 @@ a {
   align-items: center;
   justify-content: center;
 }
+.citrusAcana__secondSlide__Col{
+  min-height: 170px;
+}
 
 .citrusAcana__secondSlide__textContainer,
 .citrusAcana__thirdSlide__textContainer {
@@ -694,7 +699,7 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  row-gap: 20px;
+  row-gap: 10px;
 }
 
 .citrusAcana__logoPremium img {
@@ -1259,7 +1264,7 @@ button {
 
   .citrusAcana__firstSlide__middleContainer {
     margin-top: 10px;
-    row-gap: 20px;
+    row-gap: 10px;
     height: auto;
   }
 
@@ -1395,7 +1400,7 @@ button {
 
   .citrusAcana__firstSlide__middleContainer {
     height: 250px;
-    padding-top: 25px;
+    padding-top: 0px;
     padding-bottom: 25px;
   }
 
@@ -1420,6 +1425,7 @@ button {
     padding-bottom: 41px;
     border-bottom: 20px solid #8d9b3c;
     height: auto;
+    background: #fff!important;
   }
 
   .citrusAcana__Middle_textContainer p,
@@ -1575,6 +1581,11 @@ button {
   .citrusAcana__sliderBox {
     height: auto;
   }
+  .citrusAcana__firstSlideTitle,
+        .citrusAcana__secondSlide__title,
+        .citrusAcana__thirdSlide__title {
+            font-size: 28px;
+        }
 }
 
 @media all and (max-width: 420px) {
